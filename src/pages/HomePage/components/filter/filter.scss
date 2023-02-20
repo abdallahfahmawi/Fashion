@@ -1,0 +1,15 @@
+@import '../../../../assets/styles/commonstyles.scss';
+@import '../../../../assets/styles/variables.scss';
+@import '../../../../assets/styles/breakpoints.scss';
+
+.filter_Holder {
+    ul {
+        li {
+            cursor: pointer;
+            font-size: 24px;
+            color: $beige-dark;
+            margin: 0 88px 0 0;
+            font-weight: 700;
+        }
+    }
+}

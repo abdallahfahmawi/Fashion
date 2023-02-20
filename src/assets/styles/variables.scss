@@ -1,0 +1,57 @@
+///Color/////
+$black: #000;
+$white: #fff;
+$orange: #e53637;
+$beige-light: #f3f2ee;
+$beige-dark: #b7b7b7;
+$rating-star: #f7941d;
+
+//// Backgrounds
+
+  .black-background {
+    background-color:$black;
+    color: $white;
+    
+  }
+  .white-background{
+    background-color:$white
+  }
+  .beige-background {
+    background-color:$beige-light
+  }
+  
+
+///// fonts
+$font-small: 15px;
+$font-medium: $font-small + 3px;
+
+///// paddings and margins
+$padding-base: 5px;
+
+//// links mixin
+@mixin links-hover($color,$background, $width) {
+  color: $color;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: $width;
+  height: 2px;
+  content: "";
+  transition: all, 0.5s;
+  background-color: $background;
+}
+
+//@mixin after-underline () {}
+
+/////Butttons
+
+@mixin Button($backgroundColorButton, $textColor, $type) {
+  background-color: $backgroundColorButton;
+  color: $textColor;
+  font-size: 16px;
+  border: none;
+  padding: 5px 30px;
+  @include breakpoint(large) {
+    font-size: 12px;
+  }
+}

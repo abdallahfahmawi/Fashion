@@ -1,0 +1,62 @@
+@import '../../assets/styles/commonstyles.scss';
+@import '../../assets/styles/breakpoints.scss';
+
+
+.carousel-item {
+    &_imageholderone {
+    
+      @include carouselimage ("../../assets/images/carouselone.webp")
+    }
+    &_imageholdertwo {
+       
+        @include carouselimage ("../../assets/images/carouseltwo.webp")
+    }
+}
+button {
+  span {
+    color: $black;
+    font-size: 30px;
+    z-index: 999999999;
+  }
+}
+
+.carousel-title {
+  position: absolute;
+  z-index: 9;
+  top: 150px;
+  left: 170px;
+  @include breakpoint (large) {
+    left: 76px;
+  }
+  @include breakpoint (small) {
+    left: 55px;
+    top: 15px;
+    padding: 0 150px 0 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    @include breakpoint (large) {
+      font-size: 29px;
+    }
+    @include breakpoint (small) {
+      font-size: 18px;
+    }
+  }
+  h6 {
+    font-size: 14px;
+    color: $orange;
+    margin-bottom: 30px;
+  }
+  p{
+    margin: 30px 0 30px 0;
+    @include breakpoint (small) {
+      margin: 12px 0 30px 0;
+    }
+  }
+  .tile {
+    padding: 0 155px 0 0;
+  }
+  
+}

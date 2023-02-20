@@ -1,0 +1,93 @@
+@import "./variables.scss";
+@import './breakpoints.scss';
+/// back grounds volor
+.background-black {
+  background-color: $black;
+  color: $white;
+}
+
+////////text color
+.text-black {
+  color: $black;
+}
+
+/////list styles
+.list-style {
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+///// orange underline
+
+.activeMenu::after {
+  //background-color: $orange;
+  @include links-hover ($black,$orange,100%)
+  
+}
+
+/////links style
+.black-links {
+  color: $black;
+  position: relative;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  } 
+}
+
+.banner-links {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 13px;
+  &::after {
+    @include links-hover ($black,$black,100%)
+  }
+  &:hover {
+    color: $black;
+    &::after {
+      @include links-hover ($black,$orange,40%)
+    }
+  }
+}
+
+///// banner images 
+@mixin banner-image($image,$float) {
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  width: 440px;
+  height: 440px;
+  float: $float;
+  @include breakpoint (medium){
+      height: 355px;
+      float: none;
+      width: 100%;
+  }
+}
+////// side navabr ( whne the window is less 768px)
+.side-navbar {
+  left: 0;
+  ul {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+////// carousel mixin
+@mixin carouselimage($background) {
+    background-image: url($background);
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  @include breakpoint (small) {
+    height: 300px;
+  }
+}
+

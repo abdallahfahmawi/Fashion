@@ -1,0 +1,166 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/breakpoints.scss";
+
+
+.header {
+  &_top {
+    padding: $padding-base + 5px 0;
+    &_left {
+      font-size: $font-small;
+      @include breakpoint (medium) {
+        font-size: 10px;
+      }
+    }
+    &_right {
+      ul {
+        padding: 0;
+
+        li {
+          margin-right: 35px;
+          font-size: $font-small - 2;
+          @include breakpoint (medium) {
+            font-size: 10px;
+          }
+          cursor: pointer;
+          &:nth-last-child(1) {
+            position: relative;
+            ul {
+              background: $white;
+              color: $black;
+              padding: 0 $padding-base + 10px !important;
+              position: absolute;
+              box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+              transition: all, 0.3s;
+              z-index: 3;
+              opacity: 0;
+              li {
+                margin: 5px 0 !important;
+              }
+            }
+            &:hover {
+              ul {
+                opacity: 1;
+              }
+            }
+          }
+
+          a {
+            color: $white;
+          }
+          span {
+            svg {
+              font-size: 15px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*** the bottom of the header*/ //
+  &_footer {
+    padding: $padding-base + 25px 0;
+    //box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+
+    &_logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_menu {
+      transition: all, 0.5s;
+      
+      @include breakpoint(medium) {
+        position: absolute;
+        left: -300px;
+        background: #ffff;
+        top: 0;
+        width: 300px;
+        height: 100%;
+      }
+
+      ul {
+        display: flex;
+        @include breakpoint (medium) {
+            display: block;
+        }
+
+        li {
+          margin-right: 45px;
+          @include breakpoint(large) {
+            margin-right: 20px;
+          }
+
+          a {
+            font-size: $font-medium;
+            color: $black;
+            font-weight: 600;
+            position: relative;
+            padding: 4px 0;
+            @include breakpoint(large) {
+              font-size: $font-small;
+            }
+
+            &:hover {
+              &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                width: 100%;
+                height: 2px;
+                background-color: $orange;
+                content: "";
+                transition: all, 0.5s;
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //// navoptions styles
+    &_navoptions {
+        
+      ul {
+        li {
+          margin-right: 45px;
+          display: flex;
+          @include breakpoint(large) {
+            margin-right: 20px;
+          }
+          svg {
+            font-size: 24px;
+            @include breakpoint(large) {
+              font-size: 20px;
+            }
+          }
+          span {
+            margin: 3px 0 0 5px;
+            font-weight: 600;
+          }
+        }
+      }
+      &_cart {
+        span {
+          position: absolute;
+          left: 4px;
+          font-size: 10px;
+          top: 6px;
+          @include breakpoint(large) {
+            left: 3px;
+          }
+        }
+      }
+      &_toggle {
+        cursor: pointer;
+        display: none;
+        @include breakpoint (medium) {
+            display: block;
+        }
+      }
+    }
+  }
+}

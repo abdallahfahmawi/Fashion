@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/breakpoints.scss";
+
+.btn {
+
+    &-black {
+        @include Button ($black,$white, "button");
+        padding: 10px 40px;
+        font-size: 14px;
+        font-weight: 700;
+        svg {
+            margin-left:10px;
+        }
+    }
+    &-transparent {
+        border: none;
+        background: transparent;
+        color: $orange;
+        padding: 0;
+        font-weight: 700;
+        position: absolute;
+        top: 55px;
+        opacity: 0;
+    }
+}

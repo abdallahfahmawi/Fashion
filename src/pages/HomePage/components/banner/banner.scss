@@ -1,0 +1,47 @@
+
+@import '../../../../assets/styles/commonstyles.scss';
+@import '../../../../assets/styles/breakpoints.scss';
+
+
+
+
+.banner_item {
+    position: relative;
+    &_pic {
+        @include banner-image('../../assets/images/banner-1.jpg.webp',right);
+       
+    }
+
+    // the middle item
+    &_middle {
+        @include banner-image('../../assets/images/banner-2.jpg.webp',none);
+        margin-top: -70px;
+        @include breakpoint (medium) {
+            margin-top: 50px;
+        }
+    }
+
+    /// the last item in the banner
+    &_last {
+        @include banner-image('../../assets/images/banner-3.jpg.webp',right);
+        margin-top: 50px;
+    }
+
+
+    &_text {
+        max-width: 260px;
+        position: absolute;
+        top: 140px;
+        left: 107px;
+        @include breakpoint (medium) {
+            position: initial;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        h2{
+            font-weight: 600;
+        }
+
+    }
+    
+}
