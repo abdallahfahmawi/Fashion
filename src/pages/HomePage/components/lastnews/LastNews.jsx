@@ -11,7 +11,7 @@ const LastNews = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container mb-5 mt-5">
       <div className="row">{renderdNewItems}</div>
     </div>
   );

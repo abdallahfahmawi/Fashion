@@ -80,9 +80,9 @@ const Filter = (props) => {
   });
   ////////////////////////////////////////////////////////////////////////////////////
   return (
-    <div className="container">
+    <div className="container mt-5 mb-5">
       <div className="row">
-        <div className="filter_Holder">
+        <div className="filter_Holder mt-5 mb-5">
           <div className="filter_holder_selection">
             <ul className="list-style p-0 m-0 d-flex justify-content-center">
               {renderedSelections}

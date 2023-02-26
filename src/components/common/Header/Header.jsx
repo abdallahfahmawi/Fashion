@@ -22,7 +22,7 @@ const Header = (props) => {
   })
   const cartAmount = useSelector((state) => {
     const totalAmount = state.cart.totalAmount
-    return totalAmount
+    return totalAmount.toFixed(2)
   })
   ///////////////////////////// we should use on useSelector
 

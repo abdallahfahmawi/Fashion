@@ -4,7 +4,7 @@ import './banner.scss'
 
 const Banner = () => {
     return (
-        <div className="container">
+        <div className="container mt-5 mb-5">
 <div className="row">
     <div className="col-lg-7 offset-lg-4">
         <div className="banner_item">

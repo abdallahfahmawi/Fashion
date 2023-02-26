@@ -1,0 +1,40 @@
+@import "../../../assets/styles/variables.scss";
+
+.footer_holder {
+  padding: 30px 0;
+  &_about {
+    &_logo {
+      img {
+        width: 70%;
+      }
+    }
+    p {
+      margin: 30px 0;
+    }
+  }
+  &_widget {
+    h6 {
+      color: $white;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    li {
+      line-height: 36px;
+      a {
+        color: $white;
+      }
+    }
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $white;
+      color: $white;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
