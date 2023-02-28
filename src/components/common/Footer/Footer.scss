@@ -36,5 +36,20 @@
         outline: none;
       }
     }
+    form {
+      position: relative;
+      width: 65%;
+      button {
+        border: none;
+        background: transparent;
+        color: $white;
+        padding: 0;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 2px;
+        
+      }
+    }
   }
 }

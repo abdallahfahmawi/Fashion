@@ -122,7 +122,7 @@ const Header = (props) => {
         <div className="row ">
           <div className="d-flex justify-content-between">
             <div className="header_footer_logo">
-              <Link to="home">
+              <Link to="/">
                 <img src={logo} />
               </Link>
             </div>

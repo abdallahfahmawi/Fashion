@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Form from "../../ui/form/Form";
 import Input from "../Input/input";
 import logo from "../../../assets/images/footer-logo.png.webp";
@@ -5,9 +6,16 @@ import payment from "../../../assets/images/payment.png.webp";
 import "./Footer.scss";
 import "../../../assets/styles/variables.scss";
 import "../../../assets/styles/commonstyles.scss";
-import { Link } from "react-router-dom";
+import  Button  from "../Button/Button";
+import { GrMail } from 'react-icons/gr';
+
 
 const Footer = () => {
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault()
+  }
+
   return (
     <div className="footer_holder black-background ">
       <div className="container">
@@ -70,8 +78,11 @@ const Footer = () => {
             <div className="footer_holder_widget">
                 <h6>news letter</h6>
                 <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                <Form>
+                <Form onSubmit={formSubmitHandler}>
                     <Input vlaue="input email" placeholder="Your email"/>
+                    <Button >
+                      <GrMail />
+                    </Button>
                 </Form>
             </div>
           </div>
