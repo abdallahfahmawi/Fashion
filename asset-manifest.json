@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/fashion/static/css/main.85d01088.css",
+    "main.js": "/fashion/static/js/main.c24680a0.js",
+    "static/media/carouseltwo.webp": "/fashion/static/media/carouseltwo.f850b6d7763a9caa7d9d.webp",
+    "static/media/carouselone.webp": "/fashion/static/media/carouselone.63b5e8788096e624a495.webp",
+    "static/media/blog-3.jpg.webp": "/fashion/static/media/blog-3.jpg.591d2d2db20eafde1357.webp",
+    "static/media/blog-1.jpg.webp": "/fashion/static/media/blog-1.jpg.28cde8eba2dec8a65ac0.webp",
+    "static/media/banner-1.jpg.webp": "/fashion/static/media/banner-1.jpg.0f6a2313e2a19e870208.webp",
+    "static/media/blog-2.jpg.webp": "/fashion/static/media/blog-2.jpg.3bf2ecfe06b1f39764cf.webp",
+    "static/media/banner-2.jpg.webp": "/fashion/static/media/banner-2.jpg.7241be8b6f90166533b4.webp",
+    "static/media/banner-3.jpg.webp": "/fashion/static/media/banner-3.jpg.bc719f53e22ed83b9a97.webp",
+    "static/media/product-4.jpg.webp": "/fashion/static/media/product-4.jpg.54fe62e8bfd702763ff2.webp",
+    "static/media/product-6.jpg.webp": "/fashion/static/media/product-6.jpg.45147e3839717ea789d7.webp",
+    "static/media/product-1.jpg.webp": "/fashion/static/media/product-1.jpg.f8f24552cb276a50df83.webp",
+    "static/media/product-2.jpg.webp": "/fashion/static/media/product-2.jpg.081fd590b78df3e4731a.webp",
+    "static/media/payment.png.webp": "/fashion/static/media/payment.png.03b1623225b4de3b0bf8.webp",
+    "static/media/product-3.jpg.webp": "/fashion/static/media/product-3.jpg.2e1ef597a8f8708d32ca.webp",
+    "static/media/product-5.jpg.webp": "/fashion/static/media/product-5.jpg.f00047436c43107c846b.webp",
+    "static/media/product-7.jpg.webp": "/fashion/static/media/product-7.jpg.cb590d1e49ca7ddcbca3.webp",
+    "index.html": "/fashion/index.html",
+    "static/media/footer-logo.png.webp": "/fashion/static/media/footer-logo.png.3ac4119b619de3a74e4c.webp",
+    "main.85d01088.css.map": "/fashion/static/css/main.85d01088.css.map",
+    "main.c24680a0.js.map": "/fashion/static/js/main.c24680a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85d01088.css",
+    "static/js/main.c24680a0.js"
+  ]
+}
