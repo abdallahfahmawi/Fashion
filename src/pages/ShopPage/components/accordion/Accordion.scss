@@ -1,0 +1,29 @@
+.accordion_holder {
+
+    border-bottom: 1px solid #e5e5e5;
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 20px;
+    }
+    margin-bottom: 40px;
+
+    &_title {
+        cursor: pointer;
+        margin-bottom: 15px;
+        a {
+            width: 100%;
+        }
+    }
+    &_list {
+        height: 150px;
+        overflow: auto;
+      
+    }
+}

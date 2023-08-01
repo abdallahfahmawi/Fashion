@@ -2,7 +2,7 @@ import '../../../assets/styles/commonstyles.scss'
 
 const BeigeLayout = (props) => {
     return (
-        <div className="beige-background">{props.children}</div>
+        <div className={`beige-background ${props.className}`}>{props.children}</div>
     )
 }
 
