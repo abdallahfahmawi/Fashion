@@ -10,6 +10,14 @@
             color: $beige-dark;
             margin: 0 88px 0 0;
             font-weight: 700;
+            @include breakpoint (medium) {
+                
+            font-size: 14px;
+            color: #b7b7b7;
+            margin: 0 47px 20px 0;
+    
+            }
         }
     }
 }
+
